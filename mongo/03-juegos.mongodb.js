@@ -9,7 +9,7 @@ db.juegos.insertOne({
     copias: 4,
     disponible: true,
     lanzamiento: new Date('2017-03-03'),
-    desarroladora: {
+    desarrolladora: {
         _id: 1,
         nombre: 'Nintendo'
     },
@@ -28,7 +28,7 @@ db.juegos.insertMany([
         copias: 2,
         disponible: true,
         lanzamiento: new Date('2015-05-19'),
-        desarroladora: { _id: 3, nombre: 'CD Projekt Red' },
+        desarrolladora: { _id: 3, nombre: 'CD Projekt Red' },
         plataformas: ['PC', 'PlayStation 4'],
         generos: ['RPG', 'Mundo abierto']
     },
