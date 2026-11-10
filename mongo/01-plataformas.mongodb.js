@@ -1,29 +1,18 @@
 use('videojuegos')
 
-//un _id propio
-db.desarrolladoras.insertOne({
-    _id: 1,
-    nombre: 'Nintendo'
+db.getName()
+
+// insertOne: el primer documento
+db.plataformas.insertOne({
+    nombre: 'Nintendo Switch'
 })
 
-//insertMany
-db.desarrolladoras.insertMany([
-    { _id: 2, nombre: 'Ubisoft' },
-    { _id: 3, nombre: 'CD Projekt Red' },
-    { _id: 4, nombre: 'FromSoftware' }
-])
+// Implícita: al insertar (lo normal)
+db.plataformas.insertOne({
+    nombre: 'PlayStation 5'
+})
 
-//error a propósito
-// use('videojuegos');
-// db.desarrolladoras.insertOne({
-//     _id: 1,
-//     nombre: 'Otra desarrolladora'
-// })
+// Explícita
+db.createCollection('ventas')
 
-// ordered
-use('videojuegos');
-db.desarrolladoras.insertMany([
-    { _id: 5, nombre: 'Capcom' },
-    { _id: 1, nombre: 'Repetida' },
-    { _id: 6, nombre: 'Square Enix' }
-], { ordered: false })
+db.getCollectionNames()

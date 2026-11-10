@@ -4,7 +4,7 @@ use('videojuegos')
 db.juegos.insertOne({
     _id: 'SW-001',
     titulo: 'The Legend of Zelda: Breath of the Wild',
-    year: 2017,
+    anio: 2017,
     precio: 59.99,
     copias: 4,
     disponible: true,
@@ -23,7 +23,7 @@ db.juegos.insertMany([
     {
         _id:'PC-001',
         titulo: 'The Witcher 3: Wild Hunt',
-        year: 2015,
+        anio: 2015,
         precio: 39.99,
         copias: 2,
         disponible: true,
